@@ -20,6 +20,7 @@ class Gnuradio < Formula
   end
 
   option "without-python", "Build without python support"
+  option "with-qt", "Build with Qt support"
 
   depends_on "pkg-config" => :build
   depends_on :python => :recommended if MacOS.version <= :snow_leopard
