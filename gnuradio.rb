@@ -33,7 +33,8 @@ class Gnuradio < Formula
   depends_on "swig" => :build if build.with? :python
   depends_on "cmake" => :build
   depends_on 'pyqt' if build.with? "qt"
-  depends_on 'pyqwt' if build.with? "qt"
+  # Try disabling pyqwt, see if it builds...
+  #depends_on 'pyqwt' if build.with? "qt"
 
   # For documentation
   depends_on "doxygen" => [:build, :optional]
